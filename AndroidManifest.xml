@@ -12,5 +12,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".NormalActivity"></activity>
+        <!-- android:theme="@android:style/Theme.Dialog" 使用对话框式主题-->
+        <activity android:name=".DialogActivity" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".ImageActivity"></activity>
     </application>
 </manifest>

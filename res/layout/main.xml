@@ -8,6 +8,20 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Hello World, MyActivity"
+            android:gravity="center_horizontal"
             />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/start_normal_activity"
+            android:text="Start NormalActivity"
+            />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/start_dialog_activity"
+            android:text="Start DialogActivity"
+            />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/start_image_activity"
+            android:text="ActivityLifeCyecleIagme"
+            />
+
 </LinearLayout>
 
