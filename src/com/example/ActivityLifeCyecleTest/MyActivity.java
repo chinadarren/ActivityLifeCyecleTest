@@ -18,7 +18,7 @@ public class MyActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(TAG, "onCreate");
+        Log.d("MyActivity", this.toString());
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.main);
@@ -26,7 +26,18 @@ public class MyActivity extends Activity {
         Button startNormalActivity = (Button) findViewById(R.id.start_normal_activity);
         Button startDialogActivity = (Button) findViewById(R.id.start_dialog_activity);
         Button startImageActivity = (Button) findViewById(R.id.start_image_activity);
-        //使用intent创建按钮活动
+
+        Button button1 = (Button) findViewById(R.id.button_1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyActivity.this, MyActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
         startNormalActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

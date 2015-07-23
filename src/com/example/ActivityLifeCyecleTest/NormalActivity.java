@@ -7,7 +7,7 @@ import android.view.Window;
 /**
  * Created by LeiChen on 7/22/2015.
  */
-public class NormalActivity extends Activity {
+public class NormalActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savdInstanceState) {
         super.onCreate(savdInstanceState);
