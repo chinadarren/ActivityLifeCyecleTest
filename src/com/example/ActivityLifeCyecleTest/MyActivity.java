@@ -22,14 +22,14 @@ public class MyActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.main);
-
+        //定义3个按钮
         Button startNormalActivity = (Button) findViewById(R.id.start_normal_activity);
         Button startDialogActivity = (Button) findViewById(R.id.start_dialog_activity);
         Button startImageActivity = (Button) findViewById(R.id.start_image_activity);
+        //使用intent创建按钮活动
         startNormalActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(MyActivity.this, NormalActivity.class);
                 startActivity(intent);
             }
@@ -49,6 +49,8 @@ public class MyActivity extends Activity {
             }
         });
     }
+
+    //重写活动状态方法
 
     @Override
     protected void onStart() {
